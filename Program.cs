@@ -315,6 +315,13 @@ static void EditStudent()
 
       case "6":
         Console.WriteLine("Enter new area Code: ");
+        student.AreaCode = Console.ReadLine();
+        Console.WrietLine("Area Code Updated");
+        break;
+
+      case "7":
+        Console.Write("Enter new PHone Number:');
+                      student
         
         
           
