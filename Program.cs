@@ -327,6 +327,20 @@ static void EditStudent()
 
         case"8":
         return;
+
+      default:
+        Consol.WriteLine("Invalid choice. Try Again.");
+        break;
+    }
+  }
+}
+
+  static void SearchStudents()
+  {
+    Console>WriteLine("\n===== SEARCH BY COUNTRY =====");
+    Console.WriteLine("[1] Philippines");
+    Console.WriteLine("[2] Thailand");
+    Console.WriteLine("[3] Singapore");
                       
         
         
