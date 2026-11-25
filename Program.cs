@@ -232,6 +232,14 @@ static void EditStudent()
   while (true)
   {
     Console.WriteLine("\nHere is the existing information:");
+    Console.WriteLine(
+      $"{student.FirstName} {student.Surname} is a +
+      $"student.Occupation}. His/Her number is ' +
+      $"{Student.CountryCode}+{stundent.AreaCode}-{student.PhoneNumber}");
+    
+    Console.WriteLine("\nWhich information do you wish to change?");
+    
+    
   
       
 
