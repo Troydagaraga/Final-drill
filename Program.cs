@@ -24,4 +24,7 @@ class student{
     PhoneNumber = phoneNumber;
   }
 
-  
+  public void Diplay()
+  {
+    Console.Write(
+      
