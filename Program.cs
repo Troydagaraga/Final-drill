@@ -341,6 +341,11 @@ static void EditStudent()
     Console.WriteLine("[1] Philippines");
     Console.WriteLine("[2] Thailand");
     Console.WriteLine("[3] Singapore");
+    Console.WriteLine("[4] Indonnesia");
+    Console.WriteLine("[5] Malaysia);
+                      Console.WriteLin("[6] ALL");
+                      Console.WriteLine("[0] No Moore");
+    
                       
         
         
