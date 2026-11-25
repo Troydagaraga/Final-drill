@@ -246,7 +246,7 @@ static void EditStudent()
     Console.WriteLine("[5] Counntry code");
     Console.WriteLine("[6] Area Code");
     Console.WriteLine("[7] Phone number");
-    Console.WtirtLine("[8] None - Go back to main menu");
+    Console.WriteLine("[8] None - Go back to main menu");
 
     Console.Write("Enter Choice:");
     string choice = Console.ReadLine();
@@ -273,6 +273,50 @@ static void EditStudent()
         break;
         
       case "2":
+        Console.Write("Enter new surname: ");
+        student.Surname = Console.ReadLine();
+        Console.WriteLine("Surname updated!");
+        break;
+
+      case "3":
+        Console.Write("Enter new gender (M/F): ");
+        string gender = Console.ReadLine().ToUpper();
+
+        if (gender == "M" || gender == "F")
+        {
+          student.Gender = gender;
+          Console.WriteLine("Gender updated!");
+        }
+        else
+        {
+          Console.WriteLine("Invalid gender.");
+        }
+        break;
+
+      case "4":
+        Console.Write("Enter new occupation: ");
+        student.Occupation = Console.ReadLine();
+        Console.WriteLine("Occupation updated!");
+        break;
+
+      case "5":
+        Console.Write("Enter new country code: ");
+        if (int.TryParse(Console.ReadLine(), out int code)
+            && Country.IsValidCountryCode(code))
+        {
+          student.CountryCode = code;
+          Console.WriteLine("Country code updated!");
+        }
+        else
+        {
+          Console.WriteLine("Invalid country code.");
+        } 
+        break;
+
+      case "6":
+        
+        
+          
         
           
 
