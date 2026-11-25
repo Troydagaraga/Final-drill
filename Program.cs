@@ -16,6 +16,12 @@ class student{
   {
     StundentNumber = StudentNumber;
     Surname = surname;
-    firstname = firstName;
-    occupation = occupation;
-    
+    Firstname = firstName;
+    Occupation = occupation;
+    Gender = gender;
+    CountryCode = countryCode;
+    AreaCode = areaCode;
+    PhoneNumber = phoneNumber;
+  }
+
+  
