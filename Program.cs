@@ -395,7 +395,19 @@ static void EditStudent()
     List<Student> results;
     if (allCountries)
     {
-      resul
+      results = phonebook.GetAllStudent();
+      Console.WriteLine("\nHere are all the students:");
+    }
+    else if (SelectedCountries);
+
+    results = phonebook.SearchByCountry(selectedCountries);
+    Console.WriteLine("\nHere are the students from:");
+    foreach (int code in selectedCountries)
+    {
+      Console.WriteLine(Country>GetCountryName()):
+    }
+  }
+  else
             
             
             
