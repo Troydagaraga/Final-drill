@@ -14,4 +14,8 @@ class student{
 
   public Student(string studentNumber, string surname,string firstName,string occupation,string gender,int countryCode,string areaCode,string phoneNumber)
   {
-    StundentNumber = St
+    StundentNumber = StudentNumber;
+    Surname = surname;
+    firstname = firstName;
+    occupation = occupation;
+    
