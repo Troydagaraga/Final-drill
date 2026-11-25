@@ -73,7 +73,7 @@ class ASEANPhoneBook{
           {62, "Indonesia" },
           {63, "Philippines" },
           {65, "Singapore" },
-          {66, "Thailand" },
+          {66, "Thailand" }
         };
 
         public static bool IsValidCountryCode(int code)
@@ -346,8 +346,10 @@ static void EditStudent()
     Console.WriteLine("[6] ALL");
     Console.WriteLine("[0] No More");
 
+    HashSet<int> selectedCountries = new HashSet<int>();
+
     bool AllCountries = false;
-    int choiceNumber = 0;
+    int choiceNumber = 1;
 
     while (true)
     {
@@ -398,10 +400,12 @@ static void EditStudent()
       results = phonebook.GetAllStudent();
       Console.WriteLine("\nHere are all the students:");
     }
-    else if (SelectedCountries);
+    else if (SelectedCountrie.Count >0)
+    {
 
     results = phonebook.SearchByCountry(selectedCountries);
     Console.WriteLine("\nHere are the students from:");
+    
     foreach (int code in selectedCountries)
     {
       Console.WriteLine(Country.GetCountryName(code));
@@ -412,7 +416,20 @@ static void EditStudent()
     Console.WriteLine("No country selected.");
     return;
   }
-  forStudent 
+  if (results.Count == 0)
+  {
+    Console.WriteLine("No students found.");
+    return;
+  }
+  foreach (Student student in results)
+  {
+    student.Display();
+  }
+}
+}
+      
+      
+      
             
             
             
