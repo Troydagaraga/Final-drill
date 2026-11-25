@@ -67,6 +67,27 @@ class AseanPhoneBook{
 }
  class country
       {
+        public static readonly Dictionary<int,string> Countries = new Dictionary<int,string>()
+        {
+          {60, "Malaysia" },
+          {62, "Indonesia" },
+          {63, "Philippines" },
+          {65, "Singapore" },
+          {66, "Thailand" },
+        };
+
+        public static bool IsValidCountryCode(int code)
+        {
+          return Countries.ContainsKey(code);
+        }
+        public static string GetCountryName(int code)
+        {
+          return Coountries.ContainsKey(code)
+            ? Countries[code]
+            : "Unknown";
+        }
+      }
+      
         
 
   
