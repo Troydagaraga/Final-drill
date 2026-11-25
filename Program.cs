@@ -28,5 +28,6 @@ class student{
   {
     Console.Write(
       $"{Surname}, {Firstname}, with stundent number" +
-      $"{StudentNUmber}, is a {Occupation}, "+
-      $
+      $"{StudentNUmber}, is a {Occupation}. " +
+      $"His/Her Phone number is {CountryCode}. " +
+      ${AreaCode}-{PhoneNUmber
