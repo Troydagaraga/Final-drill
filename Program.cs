@@ -352,9 +352,21 @@ static void EditStudent()
     while (true)
     {
       Console.Write("Enter choice {choiceNumber}: ");
-      String intput = Console.Readline();
+      String intput = Console.ReadLine();
 
-      if (
+      if ( int.TryParse(input,out int choice))
+      {
+        Console.WriteLine("Invalid choice.");
+        continue;
+      }
+      if (choice = 0;
+          break;
+          if(choice =6)
+          {
+            allCountries = true;
+            break;
+
+            
                      
                       
         
