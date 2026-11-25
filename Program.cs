@@ -1,6 +1,6 @@
 using System;
 using System.Collection.Generic;
-using System.Ling;
+using System.Linq;
 
 class student{
   public string StudentNumber { get;set; }
@@ -43,6 +43,12 @@ class AseanPhoneBook{
   public Student FindStudent(String StudentNumber)
   {
     return student.FirstOrDefault(
+      s => s.StudentNumber == studentNumber);
+  }
+
+  public bool StudentNumberExist(string studentNumber)
+  {
+    return student.Any(
       s => s.StudentNumber == studentNumber);
   }
   
