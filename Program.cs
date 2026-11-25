@@ -34,5 +34,14 @@ class student{
       }
       }
 
+class AseanPhoneBook{
+  private List<student> student = new List<Student>();
+  public void addStudent(Student student)
+  {
+    student.Add(student);
+  }
+
+  
+
       
       
