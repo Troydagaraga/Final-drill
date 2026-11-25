@@ -130,6 +130,49 @@ static ASEANPhonebook phonebook = new ASEANPhonebook();
           }
   }
 
+  static void StoresStudent()
+  {
+    string again;
+    do 
+    {
+      Console.writeLine("\n===== STORE STUDENT =====");
+
+      string studentNumber;
+
+      while(true)
+      {
+        Console.Write("Enter student number: ");
+        studentNumber = Console.ReadLine();
+
+        if (string.IsNullOrWhiteSpace(studentNumber))
+        {
+          console.WriteLine("Student number cannot be empty.");
+        }
+        else if (phonebook.StudentNumberExist(studentNumber))
+        {
+          Console.WriteLine("Student number already exists.");
+        }
+        else
+        {
+          break;
+        }
+      }
+
+      Console.Write("Enter surname: ");
+      string surname = Console.ReadLine();
+
+      Console.Write("Enter first name: ");
+      string firstName = Console.ReadLine();
+
+      Console.Write("Enter occupation: ");
+      string occupation = Console.ReadLine();
+
+      string gender;
+
+      while (true)
+      {
+        console
+
   
         
 
