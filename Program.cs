@@ -208,7 +208,33 @@ static ASEANPhonebook phonebook = new ASEANPhonebook();
 
       phonebook.Addstudent(Student);
 
-      Console.WriteLine
+      Console.WriteLine("\nStudent successfully added!");
+      Console.Write("Do you want to enter another entry [Y/N]? ");
+      again = Console.ReadLine().ToUpper();
+    } while(again == "y");
+  }
+
+static void EditStudent()
+{
+  Console.WriteLine("\n===== EDIT STUDENT =====");
+  
+  Console.Write("Enter student number: ");
+  string studentNumber = Console.ReadLine();
+
+  Student student = phonebook.FindStudent(studentNumber);
+
+  if (student == null))
+  {
+    Console.WriteLine("Student number does not exist!");
+    return;
+  }
+
+  while (true)
+  {
+    Console.WriteLine("\nHere is the existing information:");
+  
+      
+
 
 
   
