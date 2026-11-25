@@ -27,4 +27,6 @@ class student{
   public void Diplay()
   {
     Console.Write(
-      
+      $"{Surname}, {Firstname}, with stundent number" +
+      $"{StudentNUmber}, is a {Occupation}, "+
+      $
