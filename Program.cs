@@ -242,9 +242,9 @@ static void EditStudent()
     Console.WriteLine("[1] Student number");
     Console.WriteLine("[2] Surname");
     Console.WriteLine("[3] Gender");
-    ConsoleWriteLine("[4] Occupation");
-    Console>WriteLine("[5] Counntry code");
-    Console.Wtrite("[6] Area Code");
+    Console.WriteLine("[4] Occupation");
+    Console.WriteLine("[5] Counntry code");
+    Console.WriteLine("[6] Area Code");
     Console.WriteLine("[7] Phone number");
     Console.WtirtLine("[8] None - Go back to main menu");
 
@@ -254,8 +254,31 @@ static void EditStudent()
     switch (choice)
     {
       case "1":
-        Console
-                     
+        Console.Write("Enter new student number: ");
+        string newNumber = Console.ReadLine();
+
+        if (string.IsNullOrWhiteSpace(newNumber))
+        {
+          Console.WriteLine("Student number cannot be empty.");
+        }
+        else if (phonebook.StudentNumberExists(newNumber))
+        {
+          Console.WriteLine("Student number already exists.");
+        }
+        else
+        {
+          student.StudentNumber = newNumber;
+          Console.WriteLine("Student number updated!");
+        }
+        break;
+        
+      case "2":
+        
+          
+
+        
+
+        
                     
     
 
