@@ -316,12 +316,18 @@ static void EditStudent()
       case "6":
         Console.WriteLine("Enter new area Code: ");
         student.AreaCode = Console.ReadLine();
-        Console.WrietLine("Area Code Updated");
+        Console.WriteLine("Area Code Updated");
         break;
 
       case "7":
-        Console.Write("Enter new PHone Number:');
-                      student
+        Console.Write("Enter new PHone Number:");
+        student.PhoneNumber = Console.ReadLine();
+        Console.WriteLine("Phone number is Updated!");
+        break;
+
+        case"8":
+        return;
+                      
         
         
           
