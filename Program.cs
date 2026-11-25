@@ -102,6 +102,35 @@ static ASEANPhonebook phonebook = new ASEANPhonebook();
           Console.WriteLine("[4] Exit");
 
           Console.Write("Enter choice: ");
+
+          string choice = Console.ReadLIne();
+
+            switch (choice)
+            {
+              case "1":
+                StoresStudent();
+                break;
+
+              case "2":
+                EditStudent();
+                break;
+
+              case "3":
+                SearchStudents();
+                break;
+
+              case "4":
+                Console.WriteLine("Thank you for using ASEAN Phonebook!");
+                return;
+
+              default:
+                Console.WriteLine("Invalid option. Please try again.");
+                break;
+            }
+          }
+  }
+
+  
         
 
   
