@@ -233,11 +233,32 @@ static void EditStudent()
   {
     Console.WriteLine("\nHere is the existing information:");
     Console.WriteLine(
-      $"{student.FirstName} {student.Surname} is a +
-      $"student.Occupation}. His/Her number is ' +
-      $"{Student.CountryCode}+{stundent.AreaCode}-{student.PhoneNumber}");
+      $"{student.FirstName} {student.Surname} is a " +
+      $"{student.Occupation}. His/Her number is " +
+      $"{Student.CountryCode}-{stundent.AreaCode}-{student.PhoneNumber}");
     
     Console.WriteLine("\nWhich information do you wish to change?");
+
+    Console.WriteLine("[1] Student number");
+    Console.WriteLine("[2] Surname");
+    Console.WriteLine("[3] Gender");
+    ConsoleWriteLine("[4] Occupation");
+    Console>WriteLine("[5] Counntry code");
+    Console.Wtrite("[6] Area Code");
+    Console.WriteLine("[7] Phone number");
+    Console.WtirtLine("[8] None - Go back to main menu");
+
+    Console.Write("Enter Choice:");
+    string choice = Console.ReadLine();
+
+    switch (choice)
+    {
+      case "1":
+        Console
+                     
+                    
+    
+
     
     
   
