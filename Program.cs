@@ -337,15 +337,25 @@ static void EditStudent()
 
   static void SearchStudents()
   {
-    Console>WriteLine("\n===== SEARCH BY COUNTRY =====");
+    Console.WriteLine("\n===== SEARCH BY COUNTRY =====");
     Console.WriteLine("[1] Philippines");
     Console.WriteLine("[2] Thailand");
     Console.WriteLine("[3] Singapore");
-    Console.WriteLine("[4] Indonnesia");
-    Console.WriteLine("[5] Malaysia);
-                      Console.WriteLin("[6] ALL");
-                      Console.WriteLine("[0] No Moore");
-    
+    Console.WriteLine("[4] Indonesia");
+    Console.WriteLine("[5] Malaysia");
+    Console.WriteLine("[6] ALL");
+    Console.WriteLine("[0] No More");
+
+    bool AllCountries = false;
+    int choiceNumber = 0;
+
+    while (true)
+    {
+      Console.Write("Enter choice {choiceNumber}: ");
+      String intput = Console.Readline();
+
+      if (
+                     
                       
         
         
