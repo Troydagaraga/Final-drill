@@ -171,7 +171,24 @@ static ASEANPhonebook phonebook = new ASEANPhonebook();
 
       while (true)
       {
-        console
+        console.Write("Enter gender (M/F): ");
+        gender = Console.ReadLine().ToUpper();
+         if (gender == "M" || gender == "F")
+           break;
+        Console.WriteLine("Invalid gender.");
+      }
+      int countryCode;
+
+      while (true)
+      {
+        Console.Write("Enter country code: ");
+        if (int.TryParse(Console.ReadLine(), out countryCode)
+            && Country.IsValidCountryCode(countryCode))
+        {
+          break;
+        }
+        
+
 
   
         
