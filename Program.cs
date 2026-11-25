@@ -383,7 +383,7 @@ static void EditStudent()
           selectedCountries.Add(62);
           break;
         case 5:
-          selectedCountries.Add(60):
+          selectedCountries.Add(60);
           break;
 
         default:
@@ -404,10 +404,15 @@ static void EditStudent()
     Console.WriteLine("\nHere are the students from:");
     foreach (int code in selectedCountries)
     {
-      Console.WriteLine(Country>GetCountryName()):
+      Console.WriteLine(Country.GetCountryName(code));
     }
   }
   else
+  {
+    Console.WriteLine("No country selected.");
+    return;
+  }
+  forStudent 
             
             
             
