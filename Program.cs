@@ -359,12 +359,23 @@ static void EditStudent()
         Console.WriteLine("Invalid choice.");
         continue;
       }
-      if (choice = 0;
+      if (choice == 0;
           break;
-          if(choice =6)
-          {
-            allCountries = true;
-            break;
+      if(choice ==6)
+      {
+        allCountries = true;
+        break;
+      }
+      switch (choice)
+      {
+      case 1:
+          selectedCountries.Add(63);
+          break;
+        case 2:
+        
+            
+            
+            
 
             
                      
