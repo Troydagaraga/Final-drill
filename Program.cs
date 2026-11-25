@@ -187,7 +187,28 @@ static ASEANPhonebook phonebook = new ASEANPhonebook();
         {
           break;
         }
-        
+        Console.WriteLine("Invalid country code. Use 60, 62, 63, 65, or 66.");
+      }
+      Console.Write("Enter area code: ");
+      string areaCode = Console.ReadLine();
+
+      Console.Write("Enter Number:");
+      string phoneNumber = Console.ReadLine();
+
+      Student student = new Student(
+        studentNumber,
+        surname,
+        firstname,
+        occupation,
+        gender,
+        countryCode,
+        areaCode,
+        PhoneNumber
+        );
+
+      phonebook.Addstudent(Student);
+
+      Console.WriteLine
 
 
   
