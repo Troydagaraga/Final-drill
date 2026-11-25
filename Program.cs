@@ -40,6 +40,12 @@ class AseanPhoneBook{
   {
     student.Add(student);
   }
+  public Student FindStudent(String StudentNumber)
+  {
+    return student.FirstOrDefault(
+      s => s.StudentNumber == studentNumber);
+  }
+  
 
   
 
